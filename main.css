@@ -1,0 +1,96 @@
+html {
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+    background: rgb(250, 240, 219);
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .circle {
+    height: 40rem;
+    width: 40rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 50px auto;
+    position: absolute;
+    left: 38%;
+    top: 22%;    
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 3px rgb(204, 204, 204),
+      inset 0 0 10px black,
+      0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+    .start {
+    color: white;
+    font-size: 4rem;
+    height: 16rem;
+    width: 16rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border-color: black;
+    display: inline-block;
+    outline-style: none;
+    margin: 50px auto;
+    position: relative;
+    top: 66px;
+    left: 2px;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 3px rgb(102, 102, 102),
+      inset 0 0 10px black,
+      0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .shape {
+    width: 15rem;
+    height: 20rem;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 1s;
+    transition-delay: 0.5s;
+  }
+
+  .link {
+      position: relative;
+      bottom: 45rem; left: 160rem;
+  }
+
+  #top-left {
+    top: 30px; left: 10px;
+    transform: rotate(315deg);
+    border-top: 100px solid #0c9463;
+  }
+
+  #top-right {
+    top: 30px; right: 10px;
+    transform: rotate(-315deg);
+    border-top: 100px solid #ee4540;
+  }
+
+  #bottom-left {
+    bottom: 30px; left: 10px;
+    transform: rotate(225deg);
+    border-top: 100px solid #f6da63;
+  }
+
+  #bottom-right {
+    bottom: 30px; right: 10px;
+    transform: rotate(-225deg);
+    border-top: 100px solid #4d80e4;
+  }
